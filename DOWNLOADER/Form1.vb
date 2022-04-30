@@ -34,6 +34,7 @@ Public Class Form1
     Public libctrlsinstall As Boolean = False
     Public Event FileDownloadFailed(ByVal ex As Exception)
     Public payrbool As Boolean = False
+    'comment
     Private Sub Button1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles Button1.Click
         If Not System.IO.File.Exists(path & "\AdvUpdMe.bat") Then
             'ifexists(path & "\update\AdvUpdMe.zip", path & "\update\AdvUpdMe.exe")
