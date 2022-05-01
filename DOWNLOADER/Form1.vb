@@ -34,7 +34,6 @@ Public Class Form1
     Public libctrlsinstall As Boolean = False
     Public Event FileDownloadFailed(ByVal ex As Exception)
     Public payrbool As Boolean = False
-    'comment
     Private Sub Button1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles Button1.Click
         If Not System.IO.File.Exists(path & "\AdvUpdMe.bat") Then
             'ifexists(path & "\update\AdvUpdMe.zip", path & "\update\AdvUpdMe.exe")
@@ -43,7 +42,7 @@ Public Class Form1
         If Not System.IO.File.Exists(path & "\RegOnly-libcontrol32.bat") Then
             My.Computer.Network.DownloadFile("http://www.signet.com.gr/PRImages/EditorImages/RegOnly-libcontrol32.bat", path & "\RegOnly-libcontrol32.bat")
         End If
-
+        'another comment
         RadioButton3.Enabled = False
         completedlds = False
         Label1.Visible = True
